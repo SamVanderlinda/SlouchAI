@@ -19,8 +19,8 @@ top = tkinter.Tk()  # for alerts
 # Code to add widgets will go here...
 # top.mainloop()
 
-project_id = "imposing-gadget-292822"
-model_id = "ICN6956427550008541184"
+project_id = os.environ['PROJECT_ID']
+model_id = os.environ['MODEL_ID']
 
 # Create a new VideoCapture object
 cam = cv2.VideoCapture(0)
